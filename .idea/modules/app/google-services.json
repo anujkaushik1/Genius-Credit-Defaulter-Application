@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "243339963688",
+    "firebase_url": "https://geniuscredit1-c81dd.firebaseio.com",
+    "project_id": "geniuscredit1-c81dd",
+    "storage_bucket": "geniuscredit1-c81dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243339963688:android:5963a67f9146824ba8341d",
+        "android_client_info": {
+          "package_name": "com.example.geniuscredit1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243339963688-8o8r08q1rp83v8dheh4fe6fi9adj0s04.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.geniuscredit1",
+            "certificate_hash": "758584a6a11d896ffb12a7d216909ba80e11c5b0"
+          }
+        },
+        {
+          "client_id": "243339963688-vha911ctqrsnd2rv0839unf0u7h5bs34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR2K0IGZKOjG8EHsHwFRryF3VXwOMdX1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243339963688-vha911ctqrsnd2rv0839unf0u7h5bs34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

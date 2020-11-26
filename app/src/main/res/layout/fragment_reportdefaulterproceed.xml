@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reportdefaulterproceed"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/corner1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Enter Amount"
+            android:textColor="#00008B"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-5dp"
+            android:textColor="#FF0000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="-110dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:id="@+id/reportdefaulteramount"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Amount should be greater than 10000"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Please Enter Amount"
+        android:id="@+id/requiredamount"
+        android:textColor="#FF0000"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/corner1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Select Due Date"
+            android:layout_marginTop="10dp"
+            android:textColor="#00008B"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+
+            android:textColor="#FF0000"/>
+        <TextView
+            android:layout_width="match_parent"
+         android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="-125dp"
+            android:textColor="#000000"
+            android:id="@+id/reportdefaulterproceedcalender"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Please Select Due Date"
+        android:id="@+id/requiredate"
+        android:textColor="#FF0000"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="120dp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/corner1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Description"
+            android:layout_marginTop="-15dp"
+            android:textColor="#00008B"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginLeft="8dp"
+          android:layout_marginTop="-20dp"
+            android:textColor="#FF0000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="-90dp"
+            android:id="@+id/reportdefaulterdescription"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Please Enter Description"
+        android:id="@+id/requiredescription"
+        android:textColor="#FF0000"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is there any legal case in court is already running related to above information?"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:textSize="18dp"
+
+        android:textStyle="bold"
+       android:layout_marginTop="20dp"
+        android:layout_marginLeft="55dp"
+        android:textColor="#000000"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-28dp">
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="-30dp"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="-28dp"
+            android:text="No"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+       android:layout_marginLeft="35dp"
+
+        android:text="Please Enter legal case option."
+        android:id="@+id/requirelegalcase"
+        android:textColor="#FF0000"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:textSize="19dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="40dp"
+        android:text="Proceed"
+        android:id="@+id/reportdefaulterdone"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFF"
+        android:layout_gravity="center"
+        android:background="@drawable/logincorner"/>
+
+</LinearLayout>

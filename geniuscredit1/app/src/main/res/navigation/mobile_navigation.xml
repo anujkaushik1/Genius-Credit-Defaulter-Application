@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.geniuscredit1.ui.home.HomeFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_dashboard_to_reportDefaulterFragment"
+            app:destination="@id/reportDefaulterFragment" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_viewdefaulter"
+            app:destination="@id/viewdefaulter" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_pendingrequest"
+            app:destination="@id/pendingrequest" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_viewdefaulter1"
+            app:destination="@id/viewdefaulter1" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_settlepayment2"
+            app:destination="@id/settlepayment2" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_settlementhistory2"
+            app:destination="@id/settlementhistory" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_viewcir2"
+            app:destination="@id/viewcir2" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_rejectedrequest2"
+            app:destination="@id/rejectedrequest2" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_checkingcir"
+            app:destination="@id/checkingcir" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_rqmrequest2"
+            app:destination="@id/rqmrequest2" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_wallletbalance"
+            app:destination="@id/wallletbalance" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_invoices"
+        android:name="com.example.geniuscredit1.ui.gallery.GalleryFragment"
+        android:label="My Invoices"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_certificate"
+        android:name="com.example.geniuscredit1.ui.slideshow.SlideshowFragment"
+        android:label=" CA Certificate Format"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_wallet"
+        android:name="com.example.geniuscredit1.ui.wallet"
+        android:label="Wallet"
+        tools:layout="@layout/wallet_fragment" />
+
+    <fragment
+        android:id="@+id/nav_Settlement"
+        android:name="com.example.geniuscredit1.ui.settlement"
+        android:label="Settlement"
+        tools:layout="@layout/settlement_fragment" />
+
+    <fragment
+        android:id="@+id/nav_refer"
+        android:name="com.example.geniuscredit1.ui.refer"
+        android:label="Refer &amp; Earn"
+        tools:layout="@layout/refer_fragment" />
+    <fragment
+        android:id="@+id/nav_rate"
+        android:name="com.example.geniuscredit1.ui.rate"
+        android:label="Rate"
+        tools:layout="@layout/rate_fragment" />
+    <fragment
+        android:id="@+id/nav_Support"
+        android:name="com.example.geniuscredit1.ui.support"
+        android:label="Support"
+        tools:layout="@layout/support_fragment" />
+    <fragment
+        android:id="@+id/reportDefaulterFragment"
+        android:name="com.example.geniuscredit1.reportDefaulterFragment"
+        android:label="Report Defaulter"
+        tools:layout="@layout/fragment_report_defaulter" >
+        <action
+            android:id="@+id/action_reportDefaulterFragment_to_reportdefaulterproceed2"
+            app:destination="@id/reportdefaulterproceed" />
+        <action
+            android:id="@+id/action_reportDefaulterFragment_to_nav_dashboard"
+            app:destination="@id/nav_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportdefaulterproceed"
+        android:name="com.example.geniuscredit1.reportdefaulterproceed"
+        android:label="Report Defaulter"
+        tools:layout="@layout/fragment_reportdefaulterproceed" >
+        <action
+            android:id="@+id/action_reportdefaulterproceed_to_reportdefaulterproceed2"
+            app:destination="@id/reportdefaulterproceed2" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportdefaulterproceed2"
+        android:name="com.example.geniuscredit1.reportdefaulterproceed2"
+        android:label="Report Defaulter"
+        tools:layout="@layout/fragment_reportdefaulterproceed2" >
+        <action
+            android:id="@+id/action_reportdefaulterproceed2_to_viewdefaulter"
+            app:destination="@id/viewdefaulter" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewdefaulter"
+        android:name="com.example.geniuscredit1.viewdefaulter"
+        android:label="Incomplete Request"
+        tools:layout="@layout/fragment_viewdefaulter" />
+    <fragment
+        android:id="@+id/pendingrequest"
+        android:name="com.example.geniuscredit1.pendingrequest"
+        android:label="Pending Request"
+        tools:layout="@layout/fragment_pendingrequest" />
+    <fragment
+        android:id="@+id/viewdefaulter1"
+        android:name="com.example.geniuscredit1.viewdefaulter1"
+        android:label="View Defaulter" >
+        <action
+            android:id="@+id/action_viewdefaulter1_to_nav_dashboard"
+            app:destination="@id/nav_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/settlepayment2"
+        android:name="com.example.geniuscredit1.settlepayment"
+        android:label="Settle Payment " />
+    <fragment
+        android:id="@+id/settlementhistory"
+        android:name="com.example.geniuscredit1.settlementhistory"
+        android:label="Defaulter Settlement History" />
+    <fragment
+        android:id="@+id/viewcir2"
+        android:name="com.example.geniuscredit1.viewcir"
+        android:label="Request CIR" />
+    <fragment
+        android:id="@+id/rejectedrequest2"
+        android:name="com.example.geniuscredit1.rejectedrequest"
+        android:label="Rejected Request" />
+    <fragment
+        android:id="@+id/checkingcir"
+        android:name="com.example.geniuscredit1.checkingcir"
+        android:label="View CIR"
+        tools:layout="View CIR" />
+    <activity
+        android:id="@+id/reportdefaulterwebview"
+        android:name="com.example.geniuscredit1.reportdefaulterwebview"
+        android:label="activity_reportdefaulterwebview"
+        tools:layout="@layout/activity_reportdefaulterwebview" />
+    <fragment
+        android:id="@+id/rqmrequest2"
+        android:name="com.example.geniuscredit1.rqmrequest"
+        android:label="RQM Request"
+        tools:layout="@layout/fragment_rqmrequest" />
+    <fragment
+        android:id="@+id/wallletbalance"
+        android:name="com.example.geniuscredit1.ui.wallletbalance"
+        android:label="Wallet Transactions"
+        tools:layout="@layout/fragment_wallletbalance" />
+    <activity
+        android:id="@+id/walletbalancerazorpay"
+        android:name="com.example.geniuscredit1.walletbalancerazorpay"
+        android:label="activity_walletbalancerazorpay"
+        tools:layout="@layout/activity_walletbalancerazorpay" />
+
+
+</navigation>

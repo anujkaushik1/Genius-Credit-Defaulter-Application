@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.geniuscredit1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/genius_credit"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/genius_credit_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".userupdatepassword"></activity>
+        <activity android:name=".userprofile" />
+        <activity android:name=".walletbalancerazorpay" />
+        <activity android:name=".signuppayment" />
+        <activity android:name=".reportdefaulterwebview" />
+        <activity
+            android:name=".navigationdrawer"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".customersignup" />
+        <activity android:name=".spashscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Forgotpassword" />
+        <activity android:name=".signup">
+
+        </activity>
+        <activity android:name=".signin" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_sTZWDahEqgWLJP" />
+    </application>
+
+</manifest>

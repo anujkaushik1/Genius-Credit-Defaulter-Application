@@ -1,0 +1,438 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D0D0D0">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#404040"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/toolbar"
+            android:alpha="1"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="60dp"
+        android:text="  LOGIN"
+        android:textSize="32dp"
+        android:id="@+id/loginn"
+        android:alpha="0.7"
+        android:background="#0066FF"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="129dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="200dp"
+        android:alpha="0.7"
+        android:text=" SIGNUP"
+        android:textSize="32dp"
+        android:id="@+id/signupp"
+        android:background="#0066FF"
+        android:textColor="#000000"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="310dp"
+        app:cardBackgroundColor="#A8A8A8"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Aadhaar Card"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/aadhaar"
+                    android:textSize="23dp"
+                    android:maxLength="15"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Please enter legal name"
+                    android:id="@+id/requiredlegalname1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Legal name"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/legalname1"
+                    android:textSize="23dp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Please enter state jurisdiction"
+                    android:id="@+id/requiredstatejuris1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="State Jurisdiction"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:id="@+id/statejurisdiction1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Please enter nature business activity"
+                    android:id="@+id/requirenature1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Nature Business Activity"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/naturebusiness1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Please enter trade name"
+                    android:id="@+id/requiredtrade1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Trade Name"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/tradename1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Please enter state"
+                    android:id="@+id/requiredstate1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="State"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/state1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Please enter city"
+                    android:id="@+id/requiredcity1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="City"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/city1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Please enter address"
+                    android:id="@+id/requiredaddress1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Address"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/address1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Please enter business category"
+                    android:id="@+id/requiredbusinesscategory1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Business Category"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/businesscategoty1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Enter a valid email address"
+                    android:id="@+id/requiredemail1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Email"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/email1"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:inputType="textEmailAddress"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Please enter mobile number"
+                    android:id="@+id/requiredmobile1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Mobile Number"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:text="+91"
+                    android:maxLength="13"
+                    android:id="@+id/mobilenumber1"
+                    android:inputType="phone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Password is required"
+                    android:id="@+id/requiredpassword1"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Password"
+                    android:textColor="#00008B"
+                    android:layout_marginTop="4dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="23dp"
+                    android:textColor="#000000"
+                    android:id="@+id/password1"
+                    android:inputType="textPassword"/>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="40dp"
+        android:text="             Proceed"
+        android:textSize="32dp"
+        android:id="@+id/proceed1"
+        android:background="#0066FF"
+        android:alpha="0.7"
+        android:textColor="#FFFF"/>
+
+    <CheckBox
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox1"
+        android:checked="false"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="I have read and accept all Terms &amp; conditions."
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="-40dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-420dp"
+        android:id="@+id/cardviewerror1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="oops !"
+                android:textColor="#0A609A"
+                android:textSize="28dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please accept terms and conditions first."
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="                         Ok"
+                android:textSize="19dp"
+                android:id="@+id/ok1"
+                android:background="#737CA1"
+                android:textColor="#FFFF"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

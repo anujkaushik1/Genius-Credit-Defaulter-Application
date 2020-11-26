@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reportdefaulterproceed2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/corner1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UDIN"
+            android:layout_marginLeft="30dp"
+            android:textSize="17dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#00008B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="-28dp"
+            android:textColor="#FF0000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+
+            android:layout_marginLeft="30dp"
+            android:id="@+id/udin"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="35dp"
+        android:text="Please Enter UDIN number"
+       android:id="@+id/requireudin"
+        android:textColor="#FF0000"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Files"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Only PDF are allowed)"
+        android:layout_marginTop="-22dp"
+        android:layout_marginLeft="120dp"/>
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#DCDCDC"
+        android:textSize="15dp"
+        android:text="Upload ledger"
+        android:clickable="true"
+        android:longClickable="true"
+        android:id="@+id/uploadledger"
+        />
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="-56dp"
+        android:layout_marginLeft="190dp"
+        android:background="#DCDCDC"
+        android:textSize="15dp"
+        android:clickable="true"
+        android:longClickable="true"
+        android:text="Upload CA certificate "
+        android:id="@+id/uploadcacertficate"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CA Certificate Format"
+        android:layout_marginLeft="218dp"
+        android:textSize="17dp"
+        android:id="@+id/cacertficateformat"
+        android:textColor="#0066FF"
+        android:clickable="true"
+        android:longClickable="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="218dp"
+
+        android:text="__________________________"
+        android:layout_marginTop="-15dp"
+        android:textColor="#0066FF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="25dp"
+        android:text="Please Upload Ledger"
+        android:layout_marginTop="5dp"
+        android:textColor="#FF0000"
+    android:id="@+id/requireledger"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="25dp"
+        android:text="Please Upload CA certificate"
+       android:layout_marginTop="15dp"
+        android:id="@+id/requirecacertificate"
+        android:textColor="#FF0000"
+
+       />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="I have read and accept all the terms and conditions"
+        android:textSize="15dp"
+        android:id="@+id/checkbox"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:id="@+id/summit"
+        android:background="#0066FF"
+
+        android:textColor="#FFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:id="@+id/cancel"/>
+
+</LinearLayout>

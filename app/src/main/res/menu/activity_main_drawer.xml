@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+    <group android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/nav_dashboard"
+
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/invoices3"
+            android:icon="@drawable/invoices"
+            android:title="My Invoices" />
+        <item
+            android:id="@+id/reportdefaulterwebview"
+            android:icon="@drawable/cacertificate"
+            android:title="CA CERTIFICATE FORMAT" />
+        <item
+            android:id="@+id/wallletbalance"
+            android:icon="@drawable/wallet"
+            android:title="Wallet" />
+
+        <item
+            android:id="@+id/reportDefaulterFragment"
+            android:icon="@drawable/user"
+            android:title="Report Defaulter" />
+
+        <item
+            android:id="@+id/viewdefaulter1"
+            android:icon="@drawable/viewdefaulter"
+            android:title="View Defaulter" />
+
+        <item
+            android:id="@+id/settlepayment2"
+            android:icon="@drawable/settlement"
+            android:title="Settle Payment" />
+        <item
+            android:id="@+id/settlementhistory"
+            android:icon="@drawable/defaulterhistory"
+            android:title="Defaulter Settlement History" />
+        <item
+            android:id="@+id/viewcir2"
+            android:icon="@drawable/requestcir"
+            android:title="Request CIR" />
+        <item
+            android:id="@+id/checkingcir"
+            android:icon="@drawable/viewcir"
+            android:title="View CIR" />
+       
+    </group>
+
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout      v2.9" />
+    </group>
+
+</menu>
+
